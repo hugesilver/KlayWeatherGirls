@@ -1,0 +1,75 @@
+/* Key frames */
+@keyframes animation-navigation{
+    0%{top:-80px;}
+    100%{top:0px;}
+}
+@keyframes animation-open{
+    0%{
+        transform: rotate(0deg); 
+        transform-origin:center center;
+    }
+    100%{
+        transform: rotate(180deg); 
+        transform-origin:center center;
+    }
+}
+@keyframes animation-close{
+    0%{
+        transform: rotate(180deg); 
+        transform-origin:center center;
+    }
+    100%{
+        transform: rotate(0deg); 
+        transform-origin:center center;
+    }
+}
+@keyframes animation-fadeup{
+    0%{
+        margin-top:2%;
+        opacity:0;
+    }
+    100%{
+        margin-top:0%;
+        opacity:1;
+    }
+}
+
+@keyframes animation-zoom-in-up{
+    0%{transform:scale(0);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+
+@keyframes animation-floating{
+    0%{transform:translate(0,0px);}
+    50%{transform:translate(0,25px);}
+    100%{transform:translate(0,0px);}
+}
+
+@keyframes animation-completed-up{
+    0%{bottom:-50px;}
+    100%{bottom:50px;}
+}
+
+@keyframes animation-completed-down{
+    0%{bottom:50px;}
+    100%{bottom:-50px;}
+}
+
+@keyframes sorry{
+    0%{margin-left:0%;}
+    100%{margin-left:-100%;}
+}
+
+/* Scroll Animation */
+.scrollop0{
+    opacity:0;
+    transition:all 0.5s ease;
+}
+.scrollop1{
+    opacity:1;
+    transform:none;
+}
+.fade-up{
+    transform:translate(0,100px);
+}

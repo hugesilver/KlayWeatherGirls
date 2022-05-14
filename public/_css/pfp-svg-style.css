@@ -1,0 +1,32 @@
+/* Main Logo */
+.logo .st0{fill:#FFBCA2;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+.logo .st1{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+.logo .st2{fill:none;stroke:#000000;stroke-width:9;stroke-miterlimit:10;}
+.logo .st3{fill:#2e2e2e;}
+.logo:hover .st1{fill:#a2d4ff;}
+
+/* Opensea */
+.icon-opensea .st0{fill:#5f5f5f;}
+.icon-opensea .st1{fill:none;}
+.icon-opensea:hover .st0{fill:#407fdb;}
+.icon-opensea:hover .st1{fill:#ffffff;}
+
+/* Twitter */
+.icon-twitter .st0{fill:#5f5f5f;}
+.icon-twitter:hover .st0{fill:#1d9bf0;}
+
+/* Discord */
+.icon-discord .st0{fill:#5f5f5f;}
+.icon-discord:hover .st0{fill:#5865f2;}
+
+/* Youtube */
+.icon-youtube .st0{fill:#5f5f5f;}
+.icon-youtube .st1{fill:none;}
+.icon-youtube:hover .st0{fill:#e70000;}
+.icon-youtube:hover .st1{fill:#FFFFFF;}
+
+/* Instagram */
+.icon-instagram use{fill:#5f5f5f;}
+.icon-instagram image{display:none; overflow:hidden;}
+.icon-instagram:hover use{fill:none;}
+.icon-instagram:hover image{display:block; overflow:hidden;}

@@ -1,0 +1,58 @@
+/* Main Logo */
+.logo .st0{fill:#FFBCA2;stroke:#ffffff;stroke-width:10;stroke-miterlimit:10;}
+.logo .st1{fill:none;stroke:#ffffff;stroke-width:10;stroke-miterlimit:10;}
+.logo .st2{fill:none;stroke:#ffffff;stroke-width:9;stroke-miterlimit:10;}
+.logo:hover .st1{fill:#a2d4ff;}
+/* Opensea */
+.icon-opensea .st0{fill:#ffffff;}
+.icon-opensea .st1{fill:none;}
+.icon-opensea:hover .st0{fill:#407fdb;}
+.icon-opensea:hover .st1{fill:#ffffff;}
+
+/* Twitter */
+.icon-twitter .st0{fill:#ffffff;}
+.icon-twitter:hover .st0{fill:#1d9bf0;}
+
+/* Discord */
+.icon-discord .st0{fill:#ffffff;}
+.icon-discord:hover .st0{fill:#5865f2;}
+
+/* Kakaotalk */
+.icon-kakaotalk .st0{fill:#ffffff;}
+.icon-kakaotalk .st1{fill:none;}
+.icon-kakaotalk:hover .st0{fill:#391b1b;}
+.icon-kakaotalk:hover .st1{fill:#fae300;}
+
+/* Youtube */
+.icon-youtube .st0{fill:#ffffff;}
+.icon-youtube .st1{fill:none;}
+.icon-youtube:hover .st0{fill:#e70000;}
+.icon-youtube:hover .st1{fill:#FFFFFF;}
+
+/* Instagram */
+.icon-instagram use{fill:#ffffff;}
+.icon-instagram image{display:none; overflow:hidden;}
+.icon-instagram:hover use{fill:none;}
+.icon-instagram:hover image{display:block; overflow:hidden;}
+
+/* Medium */
+.icon-medium .st0{fill:#ffffff;}
+
+/* Menu bar */
+#icon-menu path{fill:#ffffff;}
+
+/* Top Button */
+#button_top .st0{fill:#FFB8C2;stroke:#FFFFFF;stroke-width:20;stroke-miterlimit:10;}
+#button_top .st1{fill:#FFFFFF;}
+#button_top:hover .st0{fill:#bd9fa3;}
+
+/* Play Button */
+.button_play .st0{fill:#ffffff;stroke:#000000;}
+
+/* Left Arrow */
+#arrow_left .st0{fill:#595757;}
+#arrow_left:hover .st0{fill:#fdfdfd;}
+
+/* Right Arrow */
+#arrow_right .st0{fill:#595757;}
+#arrow_right:hover .st0{fill:#fdfdfd;}

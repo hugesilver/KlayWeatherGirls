@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="https://klayweathergirls.com/img/meta/icon.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://klayweathergirls.com/img/meta/icon.png"/>
+    <script src="https://kit.fontawesome.com/15a2ea543e.js" crossorigin="anonymous"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/_css/nanum-square.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://klayweathergirls.com/_css/mint-style.css"/>
+    <script type="text/javascript">
+      function maxLengthCheck(object) {
+        if (object.value.length > object.maxLength) {
+          object.value = object.value.slice(0, object.maxLength);
+        }
+      }
+    </script>
+    <title>Mint:KlayWeatherGirls</title>
+  </head>
+  <body>
+    <img id="bg" />
+    <!--LOGO-->
+    <img class="logo" src="https://klayweathergirls.com/_img/meta/icon.png"/>
+    <div id="root">
+      <div id="mint-box">
+        <button id="kaikasBtn" onclick="connect();">
+          <p>Connect Kaikas</p>
+        </button>
+        <p id="title">Minting Block Number</p>
+        <div id="currentblock">
+          <p>CURRENT BLOCK</p>
+          <p>#0000000</p>
+        </div>
+        <div id="mintingstartsat">
+          <p>MINTING STARTS AT</p>
+          <p>#0000000</p>
+        </div>
+        <div class="bottomstripe"></div>
+        <div id="price">
+          <p>Price</p>
+          <p>00</p>
+        </div>
+        <div id="pertransacion">
+          <p>Per Transacion</p>
+          <p>0</p>
+        </div>
+        <div id="perwallet">
+          <p>Per Wallet</p>
+          <p>0</p>
+        </div>
+        <div class="bottomstripe"></div>
+        <div id="nftamount">
+          <p>NFT 수량</p>
+          <progress id="amountnft" value="0" min="0" max="0"></progress>
+          <div id="amount_sign">
+            <p>▲</p>
+            <p id="count">남은 수량:</p>
+          </div>
+        </div>
+        <div class="bottomstripe"></div>
+        <!--바뀐부분-->
+        <div id="holdnfts" style="display: none">
+          <p>Holding amount of WeatherGirls NFT</p>
+          <p>0</p>
+        </div>
+        <div id="approval" style="display: block">
+          <p>0</p>
+          <p style="color: #94160d">Not Approved</p>
+        </div>
+        <div id="round">
+          <p>Round</p>
+          <p>Public</p>
+        </div>
+        <form id="mint">
+          <p>Amount</p>
+          <div id="minus">-</div>
+          <input
+            id="input_amount"
+            type="number"
+            maxlength="2"
+            min="1"
+            max="5"
+            value="1"
+            oninput="maxLengthCheck(this)"
+            readonly
+          />
+          <div id="plus">+</div>
+          <div id="input_submit" onclick="allMint()">MINT</div>
+        </form>
+      </div>
+    </div>
+    <script src="https://klayweathergirls.com/_js/mintScript.js"></script>
+    <script src="https://klayweathergirls.com/_js/mint-general.js"></script>
+  </body>
+</html>

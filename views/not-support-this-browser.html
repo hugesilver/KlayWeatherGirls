@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>We are Sorry</title>
+        <link rel="shortcut icon" href="https://klayweathergirls.com/_img/meta/shortcut_icon.ico">
+        <style>
+            @font-face {font-family:'Goyang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff'); font-weight: normal; font-style: normal;}
+            @font-face {font-family:'GoyangIlsan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); font-weight: normal; font-style: normal;}
+            *{margin:0; padding:0;}
+            body{overflow:hidden;}
+            #background{position:fixed; width:1920px; left:50%; transform:translate(-50%,0); top:0; z-index:-1;}
+            span{font-family:'Goyang'; color:#ffffff; font-weight:bold; margin-left:auto; margin-right:auto;}
+            #girl{display:block; width:480px; height:auto; position:relative; margin-left:auto; margin-right:auto; margin-top:1%; animation:animation-floating 2s infinite linear;}
+            #letter{display:block; position:relative; margin-top:50px; margin-left:auto; margin-right:auto; text-align:center;}
+            #ko{font-size:48pt;}
+            #en{font-size:32pt;}
+            p{font-family:'GoyangIlsan'; color:#ffff00; text-align:center; margin-left:auto; margin-right:auto; font-size:18pt; position:relative; margin:3% 0;}
+            #button{width:100%; float:left; position:relative; bottom:53px; text-align:center; margin-top:3%;}
+            button{font-size:18pt; color:#ffffee; padding:12px 20px; border-radius:30px; width:260px; margin:0 25px; cursor:pointer; border:1.5px solid #ffffff; transition:all 0.3s ease;}
+            button:hover{transform:scale(1.05);}
+            button:nth-child(1){background-image:url("https://klayweathergirls.com/_img/ie/button_edge.png"); background-size:cover;}
+            button:nth-child(2){background-image:url("https://klayweathergirls.com/_img/ie/button_chrome.png"); background-size:cover;}
+            button:nth-child(3){background-image:url("https://klayweathergirls.com/_img/ie/button_whale.png"); background-size:cover;}
+
+            @keyframes animation-floating{
+            0%{transform:translate(0,0px);}
+            50%{transform:translate(0,25px);}
+            100%{transform:translate(0,0px);}
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://klayweathergirls.com/_img/about/background-mobile.png" id="background">
+        <img src="https://klayweathergirls.com/_img/ie/browser-girl.png" id="girl">
+        <div id="letter">
+            <span id="ko">죄송합니다. 이 브라우저는 지원하지 않습니다.</span><br>
+            <span id="en">Sorry, We are not support this Browser.</span>
+        </div>
+        <p>이런 브라우저는 어때요?</p>
+        <div id="button">
+            <button id="but_edge">Microsoft Edge</button>
+            <button id="but_chrome">Google Chrome</button>
+            <button id="but_whale">Naver Whale</button>
+        </div>
+        <script type="text/javascript">
+            var edge = document.getElementById("but_edge");
+            var chrome = document.getElementById("but_chrome");
+            var whale = document.getElementById("but_whale");
+
+            edge.addEventListener("click",function(){
+                location.replace("https://www.microsoft.com/edge");
+            })
+            chrome.addEventListener("click",function(){
+                location.replace("https://www.google.co.kr/chrome");
+            })
+            whale.addEventListener("click",function(){
+                location.replace("https://whale.naver.com/");
+            })
+        </script>
+    </body>
+</html>

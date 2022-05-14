@@ -1,0 +1,102 @@
+@font-face {
+    font-family:'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'GoyangIlsan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0; 
+    padding:0;
+}
+body{
+    width:1920px;
+    height:1080px;
+    overflow:hidden;
+}
+#background{
+    position:fixed;
+    width:1920px;
+    left:50%;
+    transform:translate(-50%,0);
+    top:0;
+    z-index:-1;
+}
+span{
+    font-family:'Goyang';
+    color:#ffffff;
+    font-weight:bold;
+    margin-left:auto;
+    margin-right:auto;
+}
+#girl{
+    width:480px;
+    height:auto;
+    position:fixed;
+    left:50%;
+    transform:translate(-50%,0);
+    top:45px;
+}
+#letter{
+    width:1920px;
+    position:fixed;
+    left:50%;
+    transform:translate(-50%,0);
+    bottom:247px;
+    text-align:center;
+}
+#ko{
+    font-size:48pt;
+}
+#en{
+    font-size:32pt;
+}
+p{
+    font-family:'GoyangIlsan';
+    color:#ffff00;
+    font-size:18pt;
+    position:fixed;
+    left:50%;
+    transform:translate(-50%,0);
+    bottom:135px;
+}
+#button{
+    width:1920px;
+    float:left;
+    position:fixed;
+    left:50%;
+    transform:translate(-50%,0);
+    bottom:53px;
+    text-align:center;
+}
+button{
+    font-size:18pt;
+    color:#ffffee;
+    padding:12px 20px;
+    border-radius:30px;
+    width:260px;
+    margin:0 25px;
+    cursor:pointer;
+    border:1.5px solid #ffffff;
+    transition:all 0.3s ease;
+}
+button:hover{
+    transform:scale(1.05);
+}
+button:nth-child(1){
+    background-image:url("https://klayweathergirls.com/_img/ie/button_edge.png");
+    background-size:cover;
+}
+button:nth-child(2){
+    background-image:url("https://klayweathergirls.com/_img/ie/button_chrome.png");
+    background-size:cover;
+}
+button:nth-child(3){
+    background-image:url("https://klayweathergirls.com/_img/ie/button_whale.png");
+    background-size:cover;
+}

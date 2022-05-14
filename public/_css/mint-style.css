@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'NanumSquare';
+}
+ul, li{
+    list-style:none;
+}
+img, svg{
+    vertical-align:middle;
+    border:0;
+}
+body{
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-normal.png'), auto;
+    background:#a2d4ff;
+    -webkit-font-smoothing:antialiased;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline:none;
+}
+#root{
+    position:relative;
+}
+#bg{
+    position:fixed;
+    z-index:0;
+    top:0;
+    right:0;
+    height:100%;
+}
+.logo{
+    position:absolute;
+    width:120px;
+    top:-5px;
+    left:10px;
+}
+#mint-box{
+    position:relative;
+    width:770px;
+    height:710px;
+    margin-top:120px;
+    margin-left:140px;
+    background-color:#d3eaff;
+    border-radius:60px;
+}
+#mint-box > button{
+    cursor:pointer;
+    position:absolute;
+    right:3%;
+    top:-60px;
+    padding:10px 45px;
+    border:none;
+    background-color:#fe7d8f;
+    border-radius:30px;
+    cursor:pointer;
+}
+#mint-box button p{
+    font-family:'yg-jalnan';
+    font-size:14pt;
+    padding-top:2px;
+    font-weight:bold;
+    color:#ffffff;
+}
+#mint-box #title{
+    color:#2f2f2f;
+    font-weight:bold;
+    font-size:17pt;
+    padding-top:50px;
+    margin-left:50px;
+}
+#mint-box #currentblock{
+    margin-top:30px;
+    margin-left:50px;
+    width:41%;
+    border-right:2px solid #ffffff;
+    float:left;
+}
+#mint-box #currentblock p:first-child{
+    color:#2f2f2f;
+    font-size:11pt;
+    font-weight:bold;
+}
+#mint-box #currentblock p:last-child{
+    color:#fe7d8f;
+    padding-top:4px;
+    font-size:22pt;
+}
+#mint-box #mintingstartsat{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+}
+#mint-box #mintingstartsat p:first-child{
+    color:#2f2f2f;
+    font-size:11pt;
+    font-weight:bold;
+}
+#mint-box #mintingstartsat p:last-child{
+    color:#ffb8c2;
+    padding-top:4px;
+    font-size:22pt;
+}
+#mint-box .bottomstripe{
+    margin-top:15px;
+    margin-left:50px;
+    width:85.7%;
+    height:10px;
+    border-bottom:3px solid #ffffff;
+    float:left;
+}
+#mint-box #price{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+    width:21%;
+    border-right:2px solid #ffffff;
+}
+#mint-box #price p:first-child{
+    font-size:13pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #price p:last-child{
+    color:#4896d9;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #price p:last-child::after{
+    content:' Klay';
+    color:#4896d9;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #pertransacion{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+    width:28%;
+    border-right:2px solid #ffffff;
+}
+#mint-box #pertransacion p:first-child{
+    font-size:13pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #pertransacion p:last-child{
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #pertransacion p:last-child::before{
+    content:'최대 ';
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:16pt;
+}
+#mint-box #pertransacion p:last-child::after{
+    content: '개';
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #perwallet{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+    width:28%;
+}
+#mint-box #perwallet p:first-child{
+    font-size:13pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #perwallet p:last-child{
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #perwallet p:last-child::before{
+    content:'최대 ';
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:16pt;
+}
+#mint-box #perwallet p:last-child::after{
+    content:'개';
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #nftamount{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+    width:85%;
+}
+#mint-box #nftamount p:first-child{
+    font-size:16pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #nftamount progress{
+    margin-top:12px;
+    margin-left:10px;
+    margin-bottom:35px;
+    width:100%;
+    height:40px;
+    appearance:none;
+    border:none;
+    position:relative;
+}
+#mint-box #nftamount progress::-webkit-progress-bar{
+    background:#ffffff;
+    border-radius:50px;
+}
+#mint-box #nftamount progress::-webkit-progress-value{
+    background:#fe7d8f;
+    border-radius:50px;
+    border:2px solid #ffffff;
+}
+#mint-box #nftamount progress::before{
+    position:absolute;
+    content:attr(min);
+    top:102%;
+    left:0px;
+}
+#mint-box #nftamount progress::after{
+    position:absolute;
+    content:attr(max);
+    top:102%;
+    right:0px;
+}
+#mint-box > #nftamount > #amount_sign{
+    position:absolute;
+    text-align:center;
+    top:420px;
+}
+#mint-box #nftamount #amount_sign p:first-child{
+    color:#fe7d8f;
+}
+#mint-box #nftamount #amount_sign p:last-child{
+    color:#2f2f2f;
+}
+#mint-box #holdnfts{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+    width:55.7%;
+    border-right:2px solid #ffffff;
+}
+#mint-box #holdnfts p:first-child{
+    font-size:13pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #holdnfts p:last-child{
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #holdnfts p:last-child::after{
+    content:' NFT(s)';
+    color:#2f2f2f;
+    font-size:23pt;
+}
+#mint-box #approval{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+    width:55.7%;
+    border-right:2px solid #ffffff;
+}
+#mint-box #approval p:first-child{
+    font-size:13pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #approval p:first-child::after{
+    content:' Approval';
+    font-size:13pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #approval p:last-child{
+    color:#2f2f2f;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box #round{
+    margin-top:30px;
+    margin-left:50px;
+    float:left;
+    width:21%;
+}
+#mint-box #round p:first-child{
+    font-size:13pt;
+    color:#2f2f2f;
+    font-weight:bold;
+}
+#mint-box #round p:last-child{
+    color:#4896d9;
+    padding-top:11px;
+    font-size:23pt;
+}
+#mint-box form{
+    position:relative;
+    margin-top:20px;
+    margin-left:50px;
+    float:left;
+    width:83%;
+    height:80px;
+    background:#ffffff;
+    border-radius:50px;
+}
+#mint-box form p{
+    position:absolute;
+    font-size:16pt;
+    vertical-align:center;
+    top:50%;
+    transform:translateY(-50%);
+    left:7%;
+}
+#mint-box form #minus{
+    font-family:'yg-jalnan';
+    position:absolute;
+    width:40px;
+    height:40px;
+    font-size:21pt;
+    text-align:center;
+    border-radius:30px;
+    background-color:#ffb8c2;
+    color:#ffffff;
+    top:50%;
+    transform:translateY(-50%);
+    left:150px;
+    user-select:none;
+    cursor:pointer;
+}
+#mint-box form #minus:hover{
+    background-color:#ff8091;
+}
+#mint-box form #input_amount{
+    font-family:'yg-jalnan';
+    position:absolute;
+    width:100px;
+    height:40px;
+    top:50%;
+    transform:translateY(-50%);
+    left:220px;
+    text-align:center;
+    font-size:18pt;
+    padding-top:5px;
+    border:3px solid #ffb8c2;
+    border-radius:30px;
+    cursor:text;
+}
+#mint-box form #plus{
+    font-family:'yg-jalnan';
+    position:absolute;
+    width:40px;
+    height:40px;
+    font-size:21pt;
+    text-align:center;
+    border-radius:30px;
+    background-color:#ffb8c2;
+    color:#ffffff;
+    top:50%;
+    transform:translateY(-50%);
+    left:355px;
+    user-select:none;
+    cursor:pointer;
+}
+#mint-box form #plus:hover{
+    background-color:#ff8091;
+}
+#mint-box form #input_submit{
+    font-family:'yg-jalnan';
+    position:absolute;
+    width:160px;
+    height:50px;
+    top:50%;
+    transform:translateY(-50%);
+    background:#ffb8c2;
+    color:#ffffff;
+    font-size:24pt;
+    padding-top:2px;
+    border:none;
+    border-radius:30px;
+    right:45px;
+    text-align:center;
+    cursor:pointer;
+}
+#mint-box form #input_submit:hover{
+    background-color:#ff8091;
+}
+
+@keyframes fadeinfadeout {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }

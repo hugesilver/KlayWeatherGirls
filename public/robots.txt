@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /not-support-this-browser.html
+
+User-agent: *
+Disallow: /not-support-this-browser

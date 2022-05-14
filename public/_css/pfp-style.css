@@ -1,0 +1,277 @@
+@font-face {
+    font-family:'NanumGothic';
+    src: url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.eot');
+    src: 
+    url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.eot?#iefix') format("embedded-opentype"), 
+    url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.woff') format("woff"), 
+    url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.ttf') format("truetype");
+}
+html{
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-normal.png'), auto;
+}
+body{
+    width:100%;
+    -ms-user-select:none; 
+    -moz-user-select:-moz-none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+#root{
+    position:relative;
+    width:1600px;
+    margin:0 auto;
+}
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+ul, li{
+    list-style:none;
+}
+img, svg{
+    vertical-align:middle;
+    border:0;
+}
+nav{
+    position:relative;
+    top:0;
+    left:0;
+    width:1600px;
+    height:120px;
+}
+#nav-left{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:20px;
+    height:100px;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-rainbow.png'),auto;
+}
+nav form{
+    position:absolute;
+    top:55%;
+    left:48%;
+    transform:translate(-50%,-50%);
+    
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
+}
+nav input{
+    font-family:'NanumGothic';
+    font-weight:normal;
+    width:620px;
+    height:58px;
+    border:3px solid #5f5f5f;
+    border-radius:44px;
+    color:#000;
+    font-size:18pt;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-rainbow.png'),auto;
+    text-align:center;
+}
+#search{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background-color:#ffffff;
+    border:3px solid #5f5f5f;
+    border-radius:24px;
+    color:#5f5f5f;
+    font-size:21pt;
+    width:66px;
+    height:66px;
+    margin-left:12px;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-rainbow.png'),auto;
+}
+#nav-right{
+    position:absolute;
+    top:55%;
+    transform:translateY(-50%);
+    right:20px;
+}
+nav ul{
+    position:absolute;
+    top:55%;
+    transform:translateY(-50%);
+    right:130px;
+}
+nav ul li{
+    float:left;
+    margin:0 10px;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-rainbow.png'),auto;;
+}
+nav ul li svg{
+    width:30px;
+    height:30px;
+}
+.fa-angle-left{
+    font-size:22pt;
+    margin-right:10px;
+    color:#5f5f5f;
+}
+#links{
+    width:66px;
+    height:66px;
+    background-color:#ffffff;
+    border:3px solid #5f5f5f;
+    border-radius:24px;
+    color:#5f5f5f;
+    font-size:22pt;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-rainbow.png'),auto;
+}
+#contents{
+    margin-top:60px;
+    margin-left:20px;
+    margin-right:20px;
+}
+#title{
+    font-family:'Arial';
+    font-weight:bold;
+    font-size:42pt;
+    color:#1f1f1f;
+}
+#images{
+    margin-top:40px;
+    margin-left:-20px;
+    margin-right:-20px;
+}
+.sneakpeek{
+    position:relative;
+    width:280px;
+    height:280px;
+    margin:20px;
+    border-radius:30px;
+    background-color:#ffffff;
+    display:flex;
+    float:left;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+}
+.sneakpeek img{
+    width:100%;
+    height:100%;
+    border-radius:30px;
+}
+.sneakpeek .pfp_info{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(31,31,31,0.7);
+    border-radius:30px;
+    display:none;
+}
+.sneakpeek .name{
+    font-family:'Arial';
+    font-size:15pt;
+    color:#ffffff;
+    position:absolute;
+    top:95px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.sneakpeek .number{
+    font-family:'Arial';
+    font-weight:bold;
+    font-size:42pt;
+    color:#ffffff;
+    position:absolute;
+    top:115px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.sneakpeek img:hover ~ .pfp_info{
+    display:block;
+}
+
+#download{
+    position:fixed;
+    background:rgba(255,255,255,0.7);
+    width:100%;
+    height:100%;
+    z-index:3;
+}
+#page_download{
+    position:absolute;
+    width:1350px;
+    height:750px;
+    background:#ffffff;
+    border-radius:50px;
+    border:3px solid #1f1f1f;
+    margin:0 125px;
+    top:50%;
+    transform:translateY(-50%);
+}
+#page_download #download_number{
+    position:absolute;
+    font-family:'Arial';
+    font-weight:bold;
+    font-size:52pt;
+    left:50%;
+    transform:translateX(-50%);
+    top:60px;
+    color:#1f1f1f;
+}
+#page_download img{
+    position:absolute;
+    width:400px;
+    height:400px;
+    left:50%;
+    transform:translateX(-50%);
+    top:175px;
+    border-radius:30px;
+    border:3px solid #1f1f1f;
+}
+.fa-xmark{
+    position:absolute;
+    font-size:42pt;
+    top:30px;
+    right:50px;
+    color:#1f1f1f;
+}
+.fa-xmark:hover{
+    color:#a4a4a4;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-rainbow.png'),auto;
+}
+#page_download button{
+    position:absolute;
+    width:520px;
+    height:90px;
+    background:#ffbca2;
+    border-radius:35px;
+    border:3px solid #1f1f1f;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:35px;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-normal.png'), auto;
+}
+.fa-download{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:26pt;
+    left:157px;
+}
+#page_download button p{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-family:'Arial';
+    font-weight:bold;
+    font-size:24pt;
+    left:215px;
+}
+#page_download button:hover{
+    background:#ffcfbd;
+    cursor:url('https://klayweathergirls.com/_css/_cursor/cursor-rainbow.png'),auto;
+}
